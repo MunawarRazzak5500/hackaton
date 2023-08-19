@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+
+        body {
+            margin: 0px;
+            background-color: rgb(185, 174, 174,0.507);
+        }
+
+        #main-nav{
+            background-color: #1064e2;
+            /* width: 100%; */
+            height: 35px;
+            /* margin-top: -5px; */
+            padding-left: 130px;
+         /* padding-right: 70px; */
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            /* padding-bottom: 10px; */
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+
+        #heading-nav{
+            padding-left: 130px;
+            background-color: whitesmoke ;
+            /* margin-top: -20px;         */
+            height: 70px;
+            align-items: center;
+            display: flex;
+        }
+
+
+        span {
+            color: gray;
+            margin-right: 10px;
+        }
+
+        /* a {
+            text-decoration: none;
+            color: orange;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+        } */
+
+        .inp {
+            width: 320px;
+            height: 36px;
+            border-radius: 7px;
+            border: none;
+            border: 2px solid rgb(214, 214, 214);
+            /* margin-top: -22px; */
+            margin-bottom: 20px;
+            margin-top: 8px;
+            /* padding-bottom: 30px; */
+        }
+
+        #btn {
+            width: 80px;
+            height: 50px;
+            border-radius: 8px;
+            margin-top: -8px;
+            background-color: #1064e2;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        #p {
+            margin-right: 310px;
+            margin-top: 40px;
+            color: rgb(66, 66, 66);
+            font-weight: 500;
+            font-size: large;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            color: rgb(180, 180, 180);
+            font-size: 15px;
+        }
+
+        #main {
+            border: 2px solid rgb(244, 243, 243);
+            width: 400px;
+            height: 465px;
+            border-radius: 35px;
+            box-shadow: 3px 6px 10px 4px rgba(164, 149, 149, 0.858);
+            background-color: whitesmoke;
+            margin-top: 40px;
+        }
+
+        
+        a{
+            color: white;
+            font-weight: bolder;
+            font-size: 18px;
+             padding-right: 110px; 
+             text-decoration: none;
+        /* padding-left: 40px; */
+
+        }
+    
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="main-nav"> <h3 style="color: white;">Personal Blogging App</h3>  <a href="./login.html">Log In</a> </nav>
+
+    <nav id="heading-nav"> <h1>Sign Up</h1> </nav>
+
+
+    <center>
+
+       
+        <div id="main">
+
+
+            <!-- <span> Or </span><a href="./signup.html">Create a new one</a> <br> -->
+
+            <!-- <form> -->
+
+                <input type="text" minlength="3" maxlength="20" class="inp" id="fname" placeholder="Enter First Name" required="required"><br>
+
+
+                <input type="text" class="inp" id="lname" placeholder="Enter Last Name" required="required"><br>
+
+                <input type="email" class="inp" id="email" placeholder="Enter Email" required="required"><br>
+
+              
+                <input type="password" class="inp" id="password" placeholder="Enter Password" required="required"><br>
+
+              
+                <input type="password" class="inp" id="rpassword" placeholder="Enter Repeat Password" required="required"><br>
+
+                
+
+
+                <button id="btn" type="submit" onclick="signup()">Sign Up</button><br>
+
+
+            <!-- </form> -->
+
+
+        </div>
+
+
+    </center>
+
+    <script type="module" src="signup.js"></script>
+
+</body>
+
+</html>
